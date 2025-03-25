@@ -88,4 +88,4 @@ Having issues? [Open an Issue](https://github.com/mukundjha-mj/Psychological-Cou
 
 ---
 
-🔨 Crafted with ❤️ by [Your Name]
+🔨 Crafted with ❤️ by Mukund Jha
