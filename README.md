@@ -21,7 +21,33 @@ This project aims to provide a backend system for psychological counselling serv
    ```
 4. Set up the environment variables:
    - Create a `.env` file in the root directory.
-   - Add the necessary environment variables (e.g., database connection strings, API keys).
+   - Add the following environment variables:
+
+     ```plaintext
+     # Environment
+     NODE_ENV=development
+
+     # Server
+     PORT=5000
+
+     # MongoDB Connection
+     MONGODB_URI='mongodb://localhost:27017/counseling-platform'
+
+     # JWT
+     JWT_SECRET=$(openssl rand -base64 64)
+     JWT_EXPIRE=30d
+
+     # Email Configuration
+     SMTP_HOST=smtp.example.com
+     SMTP_PORT=587
+     SMTP_SECURE=false
+     SMTP_USER=your_email@example.com
+     SMTP_PASSWORD=your_password
+     EMAIL_FROM=support@counselingplatform.com
+
+     # Client URL (for CORS)
+     CLIENT_URL=http://localhost:5000
+     ```
 
 5. Start the server:
    ```bash
